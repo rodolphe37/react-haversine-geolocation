@@ -64,7 +64,7 @@ export default function App() {
 
   useEffect(() => {
     init();
-  }, [init]);
+  }, []);
 
   const handleNewCoords = () => {
     const newLocation: TLocation = {
@@ -120,7 +120,7 @@ export default function App() {
 
   useEffect(() => {
     init();
-  }, [init]);
+  }, []);
 
   const handleNewCoords = () => {
     const newLocation: TLocation = {
