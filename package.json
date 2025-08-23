@@ -12,6 +12,14 @@
     "build": "tsup",
     "prepublishOnly": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodolphe37/react-haversine-geolocation"
+  },
+  "bugs": {
+    "url": "https://github.com/rodolphe37/react-haversine-geolocation/issues"
+  },
+  "homepage": "https://github.com/rodolphe37/react-haversine-geolocation#readme",
   "keywords": [
     "react",
     "geolocation",

@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/react-haversine-geolocation)](https://www.npmjs.com/package/react-haversine-geolocation) ![downloads](https://img.shields.io/npm/dt/react-haversine-geolocation?color=blue&logo=npm&logoColor=blue)
+
 # react-haversine-geolocation
 
 A **React 19** hook (Web & React Native) to manage a geolocation history, using the **Haversine formula** to filter out nearby points and optimize tracking.
