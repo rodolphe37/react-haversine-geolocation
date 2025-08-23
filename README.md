@@ -31,7 +31,8 @@ yarn add react-haversine-geolocation
 
 ---
 
-## 🖥️ Live demo :  
+## 🖥️ Live demo :
+
 https://test-react-haversine-geolocation.netlify.app/
 
 ---
@@ -44,8 +45,8 @@ import { View, Text, Button } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   useGeolocationManager,
-  TLocationHistory,
-  TLocation,
+  type TLocationHistory,
+  type TLocation,
 } from "react-haversine-geolocation";
 
 const STORAGE_KEY = "geolocations";
@@ -100,8 +101,8 @@ export default function App() {
 import React, { useEffect } from "react";
 import {
   useGeolocationManager,
-  TLocationHistory,
-  TLocation,
+  type TLocationHistory,
+  type TLocation,
 } from "react-haversine-geolocation";
 
 const STORAGE_KEY = "geolocations";
@@ -190,7 +191,7 @@ export type TLocation = {
   mocked: boolean;
   timestamp: number;
 };
-````
+```
 
 - coords: GPS coordinates and related data.
 
@@ -206,21 +207,21 @@ export type TLocation = {
 export type TLocationHistory = {
   locations: TLocation[];
 };
-````
+```
 
 - locations: an array of TLocation objects, representing the recorded history.
 
 ---
 
-
 ### GeolocationOptions
+
 ```tsx
 export type GeolocationOptions = {
   distanceThreshold?: number; // threshold in meters to consider two positions identical
   loadHistory: () => Promise<TLocationHistory | null>; // function to load saved history
   saveHistory: (history: TLocationHistory) => Promise<void>; // function to save history
 };
-````
+```
 
 - distanceThreshold (optional): meters to consider two positions the same (default: 100).
 
@@ -246,12 +247,13 @@ Function signature:
 
 ```ts
 getDistanceInMeters(lat1, lon1, lat2, lon2): number
-````
+```
+
 - Parameters:
 
-     - lat1, lon1 – latitude and longitude of the first point in decimal degrees.
+  - lat1, lon1 – latitude and longitude of the first point in decimal degrees.
 
-     - lat2, lon2 – latitude and longitude of the second point in decimal degrees.
+  - lat2, lon2 – latitude and longitude of the second point in decimal degrees.
 
 - Returns: distance in meters.
 
@@ -262,10 +264,12 @@ import { getDistanceInMeters } from "react-haversine-geolocation";
 
 const distance = getDistanceInMeters(48.8566, 2.3522, 40.7128, -74.006);
 console.log(`Distance: ${distance.toFixed(2)} meters`);
-````
+```
+
 ---
 
 ## 📜 License
 
 MIT
+
 # react-haversine-geolocation
