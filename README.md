@@ -31,6 +31,11 @@ yarn add react-haversine-geolocation
 
 ---
 
+## 🖥️ Live demo :  
+https://test-react-haversine-geolocation.netlify.app/
+
+---
+
 ## 🔧 Example Usage (React Native)
 
 ```tsx
