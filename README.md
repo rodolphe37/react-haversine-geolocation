@@ -235,6 +235,8 @@ export type GeolocationOptions = {
 
 The distance between two GPS points is calculated using the Haversine formula, which determines the great-circle distance between two points on a sphere using their latitude and longitude.
 
+![Haversine formula](demo/e1e45776-aa40-4806-820e-b5c5b8050f4b_SP-687-The-haversine-formula.jpg)
+
 This formula is useful for:
 
 Filtering out GPS points that are too close to each other.

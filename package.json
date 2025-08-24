@@ -1,6 +1,6 @@
 {
   "name": "react-haversine-geolocation",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "Gestion simplifiée de la géolocalisation avec React 19 (Web & Native)",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
